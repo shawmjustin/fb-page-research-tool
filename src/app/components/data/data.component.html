@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm gray">Url</div>
+    <div class="col-sm gray">comments</div>
+    <div class="col-sm gray">likes</div>
+  </div>
+  <p *ngIf></p>
+  <app-post-row *ngFor="let post of posts; let i = index" [id]="post.id" [comments]="post.comments" [likes]="post.likes"></app-post-row>
+</div>
